@@ -1,9 +1,14 @@
 import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="flex items-center justify-center bg-teal-400">
-      <h1>Welcome to Rk Innovate.</h1>
+    <div>
+      <Header />
+      <Home />
+      <Footer />
     </div>
   );
 }
