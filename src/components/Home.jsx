@@ -5,6 +5,19 @@ import { BsAndroid2 } from "react-icons/bs";
 import dots from "../../public/dot.svg";
 import user from "../../public/user.jpg";
 import officeview from "../../public/office-view.jpg";
+// certificate icons
+import cert1 from "../../public/cert-1.png";
+import cert2 from "../../public/cert-2.png";
+import cert3 from "../../public/cert-3.png";
+import cert4 from "../../public/cert-4.png";
+import cert5 from "../../public/cert-5.png";
+// card icons
+import icon1 from "../../public/android.svg";
+import icon2 from "../../public/apple.svg";
+import icon3 from "../../public/cube.svg";
+import icon4 from "../../public/smartwatch.svg";
+import icon5 from "../../public/ux-interface.svg";
+import icon6 from "../../public/app-development.svg";
 
 function Home() {
   return (
@@ -63,7 +76,7 @@ function Home() {
         </div>
       </section>
       {/* section 2 */}
-      <section className=" bg-cream h-screen m-auto py-[120px]">
+      <section className=" bg-cream  m-auto py-[120px]">
         {/* container-1 */}
         <div className="max-w-[1140px] m-auto text-center">
           <span className=" text-title text-xl uppercase">We Are Reevan</span>
@@ -90,14 +103,173 @@ function Home() {
           <img src={officeview} alt="" />
         </div>
         {/* container-3 */}
-        <div className="max-w-[1140px] h-[326px] m-auto mt-[-150px]">
+        <div className="max-w-[1140px] flex h-[326px] m-auto justify-between mt-[-150px] ">
           {/* btn-container */}
-          <div className=" flex justify-start items-end h-full ">
-            <button className=" bg-white text-btnPrimary px-8 py-5 text-[17px] font-medium border-[1px] border-btnPrimary rounded-[100px]">
+          <div className=" flex justify-start items-end h-full">
+            <button className=" bg-white text-btnPrimary px-8 py-5 capitalize  text-[17px] font-semibold border-[1px] border-btnPrimary rounded-[100px]">
               know more reevan
             </button>
           </div>
-          <div></div>
+          {/* card-container */}
+          <div className=" bg-btnPrimary flex w-[60%] justify-between rounded-2xl p-[60px]">
+            <div className=" grid grid-cols-2 grid-rows-2 gap-6 ">
+              <span className="text-[45px] font-bold text-white ">
+                <span>7500 +</span>
+                <p className="text-[18px] text-white">Project Delivered</p>
+              </span>
+
+              <span className="text-[45px] font-bold text-white ">
+                3500 +{" "}
+                <p className="text-[18px] text-white">Enterprise Clients</p>
+              </span>
+
+              <span className="text-[45px] font-bold text-white ">
+                540 + <p className="text-[18px] text-white">Experts Team</p>
+              </span>
+
+              <span className="text-[45px] font-bold text-white ">
+                20 % <p className="text-[18px] text-white">Success Years</p>
+              </span>
+            </div>
+            {/* right */}
+            <div className=" flex items-center justify-center  w-[30%]">
+              <h1 className=" text-5xl font-bold">RK</h1>
+            </div>
+          </div>
+        </div>
+        {/* container- 4 */}
+        <div className=" max-w-[1140px] flex m-auto mt-14 gap-10  ">
+          <span className=" text-center flex items-center flex-col">
+            <img src={cert1} alt="" className=" w-[80%]" />
+            <p>Top App Developer Genuine Quality</p>
+          </span>
+          <span className=" text-center flex items-center flex-col">
+            <img src={cert2} alt="" className=" w-[80%]" />
+            <p>Top App Developer Genuine Quality</p>
+          </span>
+          <span className=" text-center flex items-center flex-col">
+            <img src={cert3} alt="" className=" w-[80%]" />
+            <p>Top App Developer Genuine Quality</p>
+          </span>
+          <span className=" text-center flex items-center flex-col">
+            <img src={cert4} alt="" className=" w-[80%]" />
+            <p>Top App Developer Genuine Quality</p>
+          </span>
+          <span className=" text-center flex items-center flex-col">
+            <img src={cert5} alt="" className=" w-[80%]" />
+            <p>Top App Developer Genuine Quality</p>
+          </span>
+        </div>
+      </section>
+      {/* /section-3 */}
+      <section className="max-w-[1140px] bg-white h-screen text-center m-auto py-[120px]">
+        <span className=" text-title text-xl uppercase">Reevan Services</span>
+        <h1 className=" text-[40px] text-heading font-bold mb-[12px]">
+          We build modern creative mobile experiences.
+        </h1>
+
+        {/* card cotnainer */}
+        <div className=" grid grid-cols-3 grid-rows-2 gap-10  ">
+          {/* 1 */}
+          <div className=" bg-[#f7f7f7] flex flex-col text-start  items-start justify-start">
+            <img src={icon1} className=" w-[50px] h-[50px]" alt="" />
+            {/* content*/}
+            <div>
+              <h3 className=" text-heading">
+                <a href="#">Android Development</a>
+              </h3>
+              <p>
+                Our software house has been recognised by google for outstanding
+                android application quality.
+              </p>
+            </div>
+            {/* link */}
+            <a href="#">Read More </a>
+          </div>
+          {/* 2 */}
+          <div className=" bg-[#f7f7f7] flex flex-col text-start  items-start justify-start">
+            <img src={icon1} className=" w-[50px] h-[50px]" alt="" />
+            {/* content*/}
+            <div>
+              <h3 className=" text-heading">
+                <a href="#">Android Development</a>
+              </h3>
+              <p>
+                Our software house has been recognised by google for outstanding
+                android application quality.
+              </p>
+            </div>
+            {/* link */}
+            <a href="#">Read More </a>
+          </div>
+          {/* 3 */}
+          <div className=" bg-[#f7f7f7] flex flex-col text-start  items-start justify-start">
+            <img src={icon1} className=" w-[50px] h-[50px]" alt="" />
+            {/* content*/}
+            <div>
+              <h3 className=" text-heading">
+                <a href="#">Android Development</a>
+              </h3>
+              <p>
+                Our software house has been recognised by google for outstanding
+                android application quality.
+              </p>
+            </div>
+            {/* link */}
+            <a href="#">Read More </a>
+          </div>
+          {/* 4 */}
+          <div className=" bg-[#f7f7f7] flex flex-col text-start  items-start justify-start">
+            <img src={icon1} className=" w-[50px] h-[50px]" alt="" />
+            {/* content*/}
+            <div>
+              <h3 className=" text-heading">
+                <a href="#">Android Development</a>
+              </h3>
+              <p>
+                Our software house has been recognised by google for outstanding
+                android application quality.
+              </p>
+            </div>
+            {/* link */}
+            <a href="#">Read More </a>
+          </div>
+          {/* 5 */}
+          <div className=" bg-[#f7f7f7] flex flex-col text-start  items-start justify-start">
+            <img src={icon1} className=" w-[50px] h-[50px]" alt="" />
+            {/* content*/}
+            <div>
+              <h3 className=" text-heading">
+                <a href="#">Android Development</a>
+              </h3>
+              <p>
+                Our software house has been recognised by google for outstanding
+                android application quality.
+              </p>
+            </div>
+            {/* link */}
+            <a href="#">Read More </a>
+          </div>
+          {/* 6 */}
+          <div className=" bg-[#f7f7f7] relative flex flex-col text-start  items-start justify-start px-[30px]  pb-[40px] pt-[79px] rounded-[14px]">
+            <img
+              src={icon1}
+              className=" absolute  top-[-20px] left-10 w-[50px] h-[50px]"
+              alt=""
+            />
+            {/* content*/}
+            <div>
+              <h3 className=" text-heading">
+                <a href="#">Android Development</a>
+              </h3>
+              <p>
+                Our software house has been recognised by google for outstanding
+                android application quality.
+              </p>
+            </div>
+            {/* link */}
+            <a href="#">Read More </a>
+          </div>
         </div>
       </section>
     </div>
