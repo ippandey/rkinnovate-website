@@ -1,6 +1,12 @@
 import React from "react";
 import heroimg from "../../public/hero-img.png";
-import { FaAppStoreIos, FaUsers } from "react-icons/fa";
+import {
+  FaAppStoreIos,
+  FaLock,
+  FaQuoteLeft,
+  FaQuoteRight,
+  FaUsers,
+} from "react-icons/fa";
 import { BsAndroid2 } from "react-icons/bs";
 import dots from "../../public/dot.svg";
 import user from "../../public/user.jpg";
@@ -18,6 +24,29 @@ import icon3 from "../../public/cube.svg";
 import icon4 from "../../public/smartwatch.svg";
 import icon5 from "../../public/ux-interface.svg";
 import icon6 from "../../public/app-development.svg";
+
+// arrow btn
+import { MdDoubleArrow } from "react-icons/md";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper/modules";
+
+// import required modules
+import { Pagination } from "swiper/modules";
+
+// tech stack
+import apple from "../../public/apple.svg";
+import android from "../../public/android.svg";
+import flutter from "../../public/fluttor.svg";
+import java from "../../public/java.svg";
+import reactnative from "../../public/native.svg";
+import swift from "../../public/swift.svg";
+import pwa from "../../public/pwa.svg";
 
 function Home() {
   return (
@@ -138,7 +167,7 @@ function Home() {
           </div>
         </div>
         {/* container- 4 */}
-        <div className=" max-w-[1140px] flex m-auto mt-14 gap-10  ">
+        <div className=" max-w-[1140px] flex m-auto  mt-8 gap-10  ">
           <span className=" text-center flex items-center flex-col">
             <img src={cert1} alt="" className=" w-[80%]" />
             <p>Top App Developer Genuine Quality</p>
@@ -169,106 +198,327 @@ function Home() {
         </h1>
 
         {/* card cotnainer */}
-        <div className=" grid grid-cols-3 grid-rows-2 gap-10  ">
+        <div className=" grid grid-cols-3 mt-20 grid-rows-2 gap-10  ">
           {/* 1 */}
-          <div className=" bg-[#f7f7f7] flex flex-col text-start  items-start justify-start">
-            <img src={icon1} className=" w-[50px] h-[50px]" alt="" />
+          <div className=" bg-[#f7f7f7] relative flex shadow-lg flex-col text-start  items-start justify-between   px-[30px]  pb-[40px] pt-[79px] rounded-[14px]">
+            <span className="absolute shadow-md top-[-20px] left-5 bg-white  rounded-[14px] p-3">
+              <img src={icon1} className="  w-[50px] h-[50px]" alt="" />
+            </span>
             {/* content*/}
             <div>
-              <h3 className=" text-heading">
+              <h3 className=" text-heading text-[28px] font-bold leading-[38px] mb-3">
                 <a href="#">Android Development</a>
               </h3>
-              <p>
+              <p className=" font-roboto text-[18px] text-para leading-[28px]">
                 Our software house has been recognised by google for outstanding
                 android application quality.
               </p>
             </div>
             {/* link */}
-            <a href="#">Read More </a>
+            <a href="#" className=" flex items-center mt-5  text-[18px] gap-1">
+              Read More <MdDoubleArrow color="#110a32" />
+            </a>
           </div>
           {/* 2 */}
-          <div className=" bg-[#f7f7f7] flex flex-col text-start  items-start justify-start">
-            <img src={icon1} className=" w-[50px] h-[50px]" alt="" />
+          <div className=" bg-[#f7f7f7] relative shadow-lg flex flex-col text-start  items-start justify-between px-[30px]  pb-[40px] pt-[79px] rounded-[14px]">
+            <span className="absolute shadow-md top-[-20px] left-5 bg-white  rounded-[14px] p-3">
+              <img src={icon2} className="  w-[50px] h-[50px]" alt="" />
+            </span>
             {/* content*/}
             <div>
-              <h3 className=" text-heading">
-                <a href="#">Android Development</a>
+              <h3 className=" text-heading text-[28px] font-bold leading-[38px] mb-3">
+                <a href="#">iOS Development</a>
               </h3>
-              <p>
-                Our software house has been recognised by google for outstanding
-                android application quality.
+              <p className=" font-roboto text-[18px] text-para leading-[28px]">
+                At Reevan, We offer pixel perfect responsive website design
+                services which are built around aesthetics and usability.
               </p>
             </div>
             {/* link */}
-            <a href="#">Read More </a>
+            <a href="#" className=" flex items-center mt-5  text-[18px] gap-1">
+              Read More <MdDoubleArrow color="#110a32" />
+            </a>
           </div>
           {/* 3 */}
-          <div className=" bg-[#f7f7f7] flex flex-col text-start  items-start justify-start">
-            <img src={icon1} className=" w-[50px] h-[50px]" alt="" />
+          <div className=" bg-[#f7f7f7] relative flex shadow-lg flex-col text-start  items-start justify-between px-[30px]  pb-[40px] pt-[79px] rounded-[14px]">
+            <span className="absolute shadow-md top-[-20px] left-5 bg-white  rounded-[14px] p-3">
+              <img src={icon3} className="  w-[50px] h-[50px]" alt="" />
+            </span>
             {/* content*/}
             <div>
-              <h3 className=" text-heading">
-                <a href="#">Android Development</a>
+              <h3 className=" text-heading text-[28px] font-bold leading-[38px] mb-3">
+                <a href="#">Hybrid App Development </a>
               </h3>
-              <p>
-                Our software house has been recognised by google for outstanding
-                android application quality.
+              <p className=" font-roboto text-[18px] text-para leading-[28px]">
+                Reevan’s product design services cover entire product design
+                lifecycle, From prototyping to fully functional design.
               </p>
             </div>
             {/* link */}
-            <a href="#">Read More </a>
+            <a href="#" className=" flex items-center mt-5  text-[18px] gap-1">
+              Read More <MdDoubleArrow color="#110a32" />
+            </a>
           </div>
           {/* 4 */}
-          <div className=" bg-[#f7f7f7] flex flex-col text-start  items-start justify-start">
-            <img src={icon1} className=" w-[50px] h-[50px]" alt="" />
+          <div className=" bg-[#f7f7f7] relative flex flex-col shadow-lg text-start  items-start justify-between px-[30px]  pb-[40px] pt-[79px] rounded-[14px]">
+            <span className="absolute shadow-md top-[-20px] left-5 bg-white  rounded-[14px] p-3">
+              <img src={icon4} className="  w-[50px] h-[50px]" alt="" />
+            </span>
             {/* content*/}
             <div>
-              <h3 className=" text-heading">
-                <a href="#">Android Development</a>
+              <h3 className=" text-heading text-[28px] font-bold leading-[38px] mb-3">
+                <a href="#">Wearable Development</a>
               </h3>
-              <p>
-                Our software house has been recognised by google for outstanding
-                android application quality.
+              <p className=" font-roboto text-[18px] text-para leading-[28px]">
+                Increase conversions. Increase leads. Increase sales. Increase
+                revenue. That&apos;s digital marketing services from Reevan.
               </p>
             </div>
             {/* link */}
-            <a href="#">Read More </a>
+            <a href="#" className=" flex items-center mt-5  text-[18px] gap-1">
+              Read More <MdDoubleArrow color="#110a32" />
+            </a>
           </div>
           {/* 5 */}
-          <div className=" bg-[#f7f7f7] flex flex-col text-start  items-start justify-start">
-            <img src={icon1} className=" w-[50px] h-[50px]" alt="" />
+          <div className=" bg-[#f7f7f7] relative flex flex-col shadow-lg text-start  items-start justify-between px-[30px]  pb-[40px] pt-[79px] rounded-[14px]">
+            <span className="absolute shadow-md top-[-20px] left-5 bg-white  rounded-[14px] p-3">
+              <img src={icon5} className="  w-[50px] h-[50px]" alt="" />
+            </span>
             {/* content*/}
             <div>
-              <h3 className=" text-heading">
-                <a href="#">Android Development</a>
+              <h3 className=" text-heading text-[28px] font-bold leading-[38px] mb-3">
+                <a href="#">UI/UX Designing</a>
               </h3>
-              <p>
-                Our software house has been recognised by google for outstanding
-                android application quality.
+              <p className=" font-roboto text-[18px] text-para leading-[28px]">
+                Our highly experienced designers comprehend your vision and
+                business objectives in order to create the designs.
               </p>
             </div>
             {/* link */}
-            <a href="#">Read More </a>
+            <a href="#" className=" flex items-center mt-5  text-[18px] gap-1">
+              Read More <MdDoubleArrow color="#110a32" />
+            </a>
           </div>
           {/* 6 */}
-          <div className=" bg-[#f7f7f7] relative flex flex-col text-start  items-start justify-start px-[30px]  pb-[40px] pt-[79px] rounded-[14px]">
-            <img
-              src={icon1}
-              className=" absolute  top-[-20px] left-10 w-[50px] h-[50px]"
-              alt=""
-            />
+          <div className=" bg-[#f7f7f7] relative flex flex-col shadow-lg text-start  items-start justify-between px-[30px]  pb-[40px] pt-[79px] rounded-[14px]">
+            <span className="absolute shadow-md top-[-20px] left-5 bg-white  rounded-[14px] p-3">
+              <img src={icon6} className="  w-[50px] h-[50px]" alt="" />
+            </span>
             {/* content*/}
             <div>
-              <h3 className=" text-heading">
-                <a href="#">Android Development</a>
+              <h3 className=" text-heading text-[28px] font-bold leading-[38px] mb-3">
+                <a href="#">Web App Development</a>
               </h3>
-              <p>
-                Our software house has been recognised by google for outstanding
-                android application quality.
+              <p className=" font-roboto text-[18px] text-para leading-[28px]">
+                Our highly experienced designers comprehend your vision and
+                business objectives in order to create the designs.
               </p>
             </div>
             {/* link */}
-            <a href="#">Read More </a>
+            <a href="#" className=" flex items-center mt-5  text-[18px] gap-1">
+              Read More <MdDoubleArrow color="#110a32" />
+            </a>
+          </div>
+        </div>
+
+        {/* hire container */}
+        <div className="flex mt-20 items-center justify-center gap-5">
+          <h1 className=" text-heading text-[34px] font-bold">
+            Hire World-Class Developers
+          </h1>
+          <button className=" bg-btnPrimary text-white px-10 flex items-center  gap-3 py-5 rounded-[30px] font-semibold">
+            Hire Now <MdDoubleArrow color="white" />
+          </button>
+        </div>
+      </section>
+      {/* section-4 carausel */}
+      <section className=" bg-violet  text-center m-auto py-[120px]">
+        <h1 className=" text-white text-[34px] font-bold mb-20">
+          Happy Client Works
+        </h1>
+
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          slidesPerView={2}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }} // Slide changes every 3 seconds
+          loop={true} // Enable infinite loop
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="">
+              {/* content container */}
+              <div className=" relative">
+                <h1>
+                  We partnered with Rk innovate to develop a custom web
+                  application for our business. Their team exhibited exceptional
+                  technical expertise and was always available to provide
+                  support and guidance throughout the project. The end product
+                  not only met our expectations but exceeded them in terms of
+                  functionality and design. Highly recommended for any software
+                  needs!
+                </h1>
+              </div>
+              <div className="  mt-8 flex items-center justify-center gap-5">
+                <img src={user} alt="" className=" w-[10px] h-[10px]" />
+                <h4 className=" font-semibold">
+                  — John D., CTO, Tech Innovations
+                </h4>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              {/* content container */}
+              <div className="relative">
+                <h1 className="">
+                  Our experience with RK innovate has been nothing short of
+                  excellent. They completed our project ahead of schedule while
+                  maintaining a high standard of quality. The development team
+                  understood our business requirements perfectly and implemented
+                  all features seamlessly. We’re extremely satisfied with their
+                  work and will continue to collaborate in the future.
+                </h1>
+              </div>
+              <div className="  mt-8 flex items-center justify-center gap-5">
+                <img src={user} alt="" className=" w-[10px] h-[10px]" />
+                <h4 className=" font-semibold">
+                  — Sarah M., Operations Manager, FinTech Solutions
+                </h4>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="">
+              {/* content container */}
+              <div className=" relative">
+                <h1>
+                  Our experience with RK innovate has been nothing short of
+                  excellent. They completed our project ahead of schedule while
+                  maintaining a high standard of quality. The development team
+                  understood our business requirements perfectly and implemented
+                  all features seamlessly. We’re extremely satisfied with their
+                  work and will continue to collaborate in the future.
+                </h1>
+              </div>
+              <div className="  mt-8 flex items-center justify-center gap-5">
+                <img src={user} alt="" className=" w-[10px] h-[10px]" />
+                <h4 className=" font-semibold">
+                  — Sarah M., Operations Manager, FinTech Solutions
+                </h4>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+
+        <div className="flex mt-20 items-center justify-center gap-5">
+          <h1 className=" text-white text-[34px] font-bold">
+            Take a look of our quality work
+          </h1>
+          <button className=" bg-btnPrimary text-white px-10 flex items-center  gap-3 py-5 rounded-[30px] font-semibold">
+            View All Work <MdDoubleArrow color="white" />
+          </button>
+        </div>
+      </section>
+
+      {/* section-5 tech stack */}
+      <section className="max-w-[1140px] bg-white  text-center m-auto py-[120px]">
+        <h1 className=" text-[40px] text-heading font-bold mb-[12px]">
+          Technologies we work with
+        </h1>
+        {/* stack container */}
+        <div className=" grid grid-cols-5 grid-rows-2 justify-items-center mt-24 px-20   gap-y-8 ">
+          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={apple} className=" w-[70px] h-[70px]" alt="" />
+            <p>iOS</p>
+          </span>
+
+          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={android} className=" w-[70px] h-[70px]" alt="" />
+            <p>Android</p>
+          </span>
+
+          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={flutter} className=" w-[70px] h-[70px]" alt="" />
+            <p>Flutter</p>
+          </span>
+          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={java} className=" w-[70px] h-[70px]" alt="" />
+            <p>Java</p>
+          </span>
+
+          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={reactnative} className=" w-[70px] h-[70px]" alt="" />
+            <p>React Native</p>
+          </span>
+          <span className=" flex flex-col px-[40px] py-[20px]  col-start-2   rounded-[14px] bg-grey items-center justify-center">
+            <img src={swift} className=" w-[70px] h-[70px]" alt="" />
+            <p>Swift</p>
+          </span>
+          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={pwa} className=" w-[70px] h-[70px]" alt="" />
+            <p>PWA</p>
+          </span>
+        </div>
+      </section>
+      {/* section -6  */}
+      <section className="relative bg-[url('../../public/formimg.avif')] bg-center bg-no-repeat h-screen bg-cover bg-fixed  m-auto py-[120px]">
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className=" relative  z-30  gap-[10rem]   flex  justify-center  h-[100%] max-w-[80%]   m-auto items-center">
+          {/* 1 */}
+          <div className="">
+            <h1 className="  text-white text-[50px] uppercase font-bold">
+              have a project? <br />
+              we would love <br /> to help.
+            </h1>
+          </div>
+          {/* form */}
+          <div className=" w-[40%]  mt-[10rem]   rounded-[50px] bg-white ">
+            <form action="#" className=" py-14 px-12">
+              <div>
+                <input
+                  type="text"
+                  id="name"
+                  className=" w-full border-2 p-5 rounded-[14px]"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div className=" mt-5">
+                <input
+                  type="email"
+                  id="name"
+                  className=" w-full border-2  p-5 rounded-[14px]"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div className=" mt-5">
+                <input
+                  type="text"
+                  id="name"
+                  className=" w-full p-5 border-2  rounded-[14px]"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div className=" mt-5 ">
+                <textarea
+                  className="rounded-[14px] placeholder:capitalize h-[200px] border-2  w-full  p-5"
+                  name="about "
+                  id=""
+                  placeholder="tell us about your project"
+                ></textarea>
+              </div>
+              <button className=" mt-5 w-full bg-white text-btnPrimary px-8 py-5 capitalize  text-[17px] font-semibold border-[1px] border-btnPrimary rounded-[100px]">
+                Submit
+              </button>
+
+              <span className=" flex  items-center gap-2 mt-5 justify-center">
+                <FaLock />
+                We hate spam, and we respect your privacy.
+              </span>
+            </form>
           </div>
         </div>
       </section>

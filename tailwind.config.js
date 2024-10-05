@@ -16,6 +16,8 @@ export default {
         purple: "#838ae0",
         btnPrimary: "#ff5b2e",
         cream: "#fbf1ef",
+        violet: "#452650",
+        grey: "#f7f7f7",
       },
     },
   },
