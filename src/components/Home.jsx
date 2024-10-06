@@ -483,7 +483,7 @@ function Home() {
         </div>
       </section>
       {/* section -6  */}
-      <section className="relative bg-[url('../../public/formimg.avif')] bg-center bg-no-repeat bg-cover bg-fixed  m-auto py-[120px]">
+      <section className="relative bg-[url('./assets/formimg.avif')] bg-center bg-no-repeat bg-cover bg-fixed  m-auto py-[120px]">
         <div className="absolute inset-0 bg-black/60"></div>
         <div className=" relative z-30  gap-[10rem]   flex  justify-center  h-[100%] max-w-[1240px]   m-auto px-[10] items-center">
           {/* 1 */}
