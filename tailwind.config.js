@@ -32,6 +32,9 @@ export default {
         gradientBottomLeft: "linear-gradient(315deg, #032b44ff, #203c4dff, #2e4551ff, #3c4d55ff, #595e5eff, #756f66ff)",
         gradientRadial: "radial-gradient(#032b44ff, #203c4dff, #2e4551ff, #3c4d55ff, #595e5eff, #756f66ff)",
       },
+
+
+      backgroundImage: { 'form-bg': "url('/public/formimg.avif')" }
     },
   },
   plugins: [],
