@@ -1,13 +1,14 @@
-import React from "react";
 import logo from "../../public/logo.png";
 function Header() {
   return (
     <div className=" h-[85px] sticky  z-50 top-0 flex shadow-sm items-center justify-between px-8 bg-white border-b-2 ">
       <div>
-        <img src={logo} alt="" />
+        <a href="/">
+          <img src={logo} alt="logo"  className=" w-[15%]" />
+        </a>
       </div>
 
-      <nav>
+      {/* <nav>
         <ul className="flex gap-5 font-semibold">
           <li>
             <a href="#">Why Us</a>
@@ -22,11 +23,13 @@ function Header() {
             <a href="#">Work With Us</a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
-      <button className="border-2 border-violet-900 px-10 py-2 rounded-full font-semibold hover:bg-violet-900 hover:text-white">
-        Contact Us
-      </button>
+      <a href="#contact-us">
+        <button className="border-2 px-10 py-2 rounded-full text-primary font-bold hover:border-primary transition-all duration-500">
+          Contact Us
+        </button>
+      </a>
     </div>
   );
 }

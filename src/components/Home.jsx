@@ -1,15 +1,13 @@
-import React from "react";
 import heroimg from "../../public/hero-img.png";
 import {
   FaAppStoreIos,
   FaLock,
-  FaQuoteLeft,
-  FaQuoteRight,
   FaUsers,
+  FaTelegramPlane,
 } from "react-icons/fa";
 import { BsAndroid2 } from "react-icons/bs";
 import dots from "../../public/dot.svg";
-import user from "../../public/user.jpg";
+import user from "../../public/user.png";
 import officeview from "../../public/office-view.jpg";
 // certificate icons
 import cert1 from "../../public/cert-1.png";
@@ -40,13 +38,16 @@ import { Autoplay } from "swiper/modules";
 import { Pagination } from "swiper/modules";
 
 // tech stack
-import apple from "../../public/apple.svg";
-import android from "../../public/android.svg";
+import python from "../../public/python.png";
+import node from "../../public/node.png";
 import flutter from "../../public/fluttor.svg";
-import java from "../../public/java.svg";
+import react from "../../public/react.png";
 import reactnative from "../../public/native.svg";
+import wordpress from "../../public/wordpress.png";
+import django from "../../public/django.png";
+import flask from "../../public/flask.png";
 import swift from "../../public/swift.svg";
-import pwa from "../../public/pwa.svg";
+import kotlin from "../../public/kotlin.png";
 
 function Home() {
   return (
@@ -65,9 +66,9 @@ function Home() {
             <br /> Company in India
           </h1>
           <p className=" text-[21px] font-roboto text-para mt-[30px]">
-            Reevan solve the world&apos;s biggest problems with Expertise.
+            We solve the world&apos;s biggest problems with Expertise.
             <br />
-            Reevan helps global brand with digital products on web,
+            We helps global brand with digital products on web,
             <br /> mobile and connected platforms.
           </p>
           {/* icon */}
@@ -78,7 +79,7 @@ function Home() {
             </div>
             <div className="flex items-center bg-[#ffefe8] rounded-[14px] p-3 gap-3">
               <FaAppStoreIos size={40} color="#ec7c47" />
-              <span className=" text-orange">100+ Featured App</span>
+              <span className=" text-[#ec7c47]">100+ Featured App</span>
             </div>
             <div className="flex items-center bg-[#fff7df] rounded-[14px] p-3 gap-3">
               <BsAndroid2 size={40} color="#8c8265" />
@@ -86,7 +87,7 @@ function Home() {
             </div>
           </div>
           <div className="flex items-center gap-10  mt-8">
-            <button className=" bg-btnPrimary text-white px-10 py-5 rounded-[30px] font-semibold">
+            <button className=" bg-primary text-white px-10 py-5 rounded-[30px] font-semibold">
               Talk to Our Expert →
             </button>
             {/* user */}
@@ -105,10 +106,12 @@ function Home() {
         </div>
       </section>
       {/* section 2 */}
-      <section className=" bg-cream  m-auto py-[120px]">
+      <section className=" bg-lightGrey  m-auto py-[120px]">
         {/* container-1 */}
         <div className="max-w-[1140px] m-auto text-center">
-          <span className=" text-title text-xl uppercase">We Are Reevan</span>
+          <span className=" text-primary text-xl uppercase">
+            We Are RK Innovate
+          </span>
           <h1 className=" text-[40px] text-heading font-bold mb-[12px]">
             Award Winning App Development Company
           </h1>
@@ -117,30 +120,30 @@ function Home() {
             Delivered.
           </h3>
           <p className=" font-roboto text-[18px] text-para px-28">
-            Reevan started its operation in the year 1999. We are Worldwide,
-            based Web, App and Digital Marketing Company. Our main Domain is Web
-            Design, App Development, Digital Marketing, Product Design and Cloud
-            Services. Customer Satisfaction and the Highest rate of Customer
-            Repeatability make us one of the pioneers in the field. So, what are
-            you waiting for? Let us discuss your ideas and our innovation in
-            detail because catering your requirement and converting it into a
-            final product is our main goal.
+            RK Innovate started its operation in the year 2023. We are
+            Worldwide, based Web, App and Digital Marketing Company. Our main
+            Domain is Web Design, App Development, Digital Marketing, Product
+            Design and Cloud Services. Customer Satisfaction and the Highest
+            rate of Customer Repeatability make us one of the pioneers in the
+            field. So, what are you waiting for? Let us discuss your ideas and
+            our innovation in detail because catering your requirement and
+            converting it into a final product is our main goal.
           </p>
         </div>
         {/* container-2 */}
-        <div className=" mt-[100px]">
+        <div className=" flex  justify-center mt-[100px] ">
           <img src={officeview} alt="" />
         </div>
         {/* container-3 */}
         <div className="max-w-[1140px] flex h-[326px] m-auto justify-between mt-[-150px] ">
           {/* btn-container */}
           <div className=" flex justify-start items-end h-full">
-            <button className=" bg-white text-btnPrimary px-8 py-5 capitalize  text-[17px] font-semibold border-[1px] border-btnPrimary rounded-[100px]">
-              know more reevan
+            <button className=" bg-white text-primary px-8 py-5 capitalize  text-[17px] font-semibold border-[1px] border-primary rounded-[100px]">
+              know more about us
             </button>
           </div>
           {/* card-container */}
-          <div className=" bg-btnPrimary flex w-[60%] justify-between rounded-2xl p-[60px]">
+          <div className=" bg-primary flex w-[60%] justify-between rounded-2xl p-[60px]">
             <div className=" grid grid-cols-2 grid-rows-2 gap-6 ">
               <span className="text-[45px] font-bold text-white ">
                 <span>7500 +</span>
@@ -162,7 +165,7 @@ function Home() {
             </div>
             {/* right */}
             <div className=" flex items-center justify-center  w-[30%]">
-              <h1 className=" text-5xl font-bold">RK</h1>
+              <h1 className=" text-5xl font-bold text-white">RK</h1>
             </div>
           </div>
         </div>
@@ -191,8 +194,8 @@ function Home() {
         </div>
       </section>
       {/* /section-3 */}
-      <section className="max-w-[1140px] bg-white h-screen text-center m-auto py-[120px]">
-        <span className=" text-title text-xl uppercase">Reevan Services</span>
+      <section className="max-w-[1140px] bg-white text-center m-auto py-[120px]">
+        <span className=" text-primary text-xl uppercase">Our Services</span>
         <h1 className=" text-[40px] text-heading font-bold mb-[12px]">
           We build modern creative mobile experiences.
         </h1>
@@ -230,7 +233,7 @@ function Home() {
                 <a href="#">iOS Development</a>
               </h3>
               <p className=" font-roboto text-[18px] text-para leading-[28px]">
-                At Reevan, We offer pixel perfect responsive website design
+                At Rk Innovate, We offer pixel perfect responsive website design
                 services which are built around aesthetics and usability.
               </p>
             </div>
@@ -250,7 +253,7 @@ function Home() {
                 <a href="#">Hybrid App Development </a>
               </h3>
               <p className=" font-roboto text-[18px] text-para leading-[28px]">
-                Reevan’s product design services cover entire product design
+                Our product design services cover entire product design
                 lifecycle, From prototyping to fully functional design.
               </p>
             </div>
@@ -267,11 +270,11 @@ function Home() {
             {/* content*/}
             <div>
               <h3 className=" text-heading text-[28px] font-bold leading-[38px] mb-3">
-                <a href="#">Wearable Development</a>
+                <a href="#">Desktop App Development</a>
               </h3>
               <p className=" font-roboto text-[18px] text-para leading-[28px]">
                 Increase conversions. Increase leads. Increase sales. Increase
-                revenue. That&apos;s digital marketing services from Reevan.
+                revenue. That&apos;s digital marketing services from us.
               </p>
             </div>
             {/* link */}
@@ -326,14 +329,14 @@ function Home() {
           <h1 className=" text-heading text-[34px] font-bold">
             Hire World-Class Developers
           </h1>
-          <button className=" bg-btnPrimary text-white px-10 flex items-center  gap-3 py-5 rounded-[30px] font-semibold">
+          <button className=" bg-primary text-white px-10 flex items-center  gap-3 py-5 rounded-[30px] font-semibold">
             Hire Now <MdDoubleArrow color="white" />
           </button>
         </div>
       </section>
       {/* section-4 carausel */}
-      <section className=" bg-violet  text-center m-auto py-[120px]">
-        <h1 className=" text-white text-[34px] font-bold mb-20">
+      <section className=" bg-lightGrey  text-center m-auto py-[120px]">
+        <h1 className=" text-heading text-[34px] font-bold mb-20">
           Happy Client Works
         </h1>
 
@@ -344,7 +347,7 @@ function Home() {
           pagination={{
             clickable: true,
           }}
-          autoplay={{ delay: 3000, disableOnInteraction: false }} // Slide changes every 3 seconds
+          autoplay={{ delay: 30000, disableOnInteraction: false }} // Slide changes every 3 seconds
           loop={true} // Enable infinite loop
           className="mySwiper"
         >
@@ -353,13 +356,13 @@ function Home() {
               {/* content container */}
               <div className=" relative">
                 <h1>
-                  We partnered with Rk innovate to develop a custom web
-                  application for our business. Their team exhibited exceptional
-                  technical expertise and was always available to provide
-                  support and guidance throughout the project. The end product
-                  not only met our expectations but exceeded them in terms of
-                  functionality and design. Highly recommended for any software
-                  needs!
+                  <strong>{"{"}</strong>We partnered with Rk innovate to develop
+                  a custom web application for our business. Their team
+                  exhibited exceptional technical expertise and was always
+                  available to provide support and guidance throughout the
+                  project. The end product not only met our expectations but
+                  exceeded them in terms of functionality and design. Highly
+                  recommended for any software needs!<strong>&nbsp;"</strong>
                 </h1>
               </div>
               <div className="  mt-8 flex items-center justify-center gap-5">
@@ -415,10 +418,10 @@ function Home() {
         </Swiper>
 
         <div className="flex mt-20 items-center justify-center gap-5">
-          <h1 className=" text-white text-[34px] font-bold">
+          <h1 className=" text-heading text-[34px] font-bold">
             Take a look of our quality work
           </h1>
-          <button className=" bg-btnPrimary text-white px-10 flex items-center  gap-3 py-5 rounded-[30px] font-semibold">
+          <button className=" bg-primary text-white px-10 flex items-center  gap-3 py-5 rounded-[30px] font-semibold">
             View All Work <MdDoubleArrow color="white" />
           </button>
         </div>
@@ -431,43 +434,58 @@ function Home() {
         </h1>
         {/* stack container */}
         <div className=" grid grid-cols-5 grid-rows-2 justify-items-center mt-24 px-20   gap-y-8 ">
-          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
-            <img src={apple} className=" w-[70px] h-[70px]" alt="" />
-            <p>iOS</p>
+          <span className="shadow-md flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={python} className=" w-[70px] h-[70px]" alt="" />
+            <p>Python</p>
           </span>
 
-          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
-            <img src={android} className=" w-[70px] h-[70px]" alt="" />
-            <p>Android</p>
+          <span className="shadow-md flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={node} className=" w-[70px] h-[70px]" alt="" />
+            <p>Node.js</p>
           </span>
 
-          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+          <span className="shadow-md flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
             <img src={flutter} className=" w-[70px] h-[70px]" alt="" />
             <p>Flutter</p>
           </span>
-          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
-            <img src={java} className=" w-[70px] h-[70px]" alt="" />
-            <p>Java</p>
+
+          <span className="shadow-md flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={react} className=" w-[70px] h-[70px]" alt="" />
+            <p>React.js</p>
           </span>
 
-          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+          <span className="shadow-md flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
             <img src={reactnative} className=" w-[70px] h-[70px]" alt="" />
             <p>React Native</p>
           </span>
-          <span className=" flex flex-col px-[40px] py-[20px]  col-start-2   rounded-[14px] bg-grey items-center justify-center">
+
+          <span className="shadow-md flex flex-col px-[40px] py-[20px]   rounded-[14px] bg-grey items-center justify-center">
             <img src={swift} className=" w-[70px] h-[70px]" alt="" />
             <p>Swift</p>
           </span>
-          <span className=" flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
-            <img src={pwa} className=" w-[70px] h-[70px]" alt="" />
-            <p>PWA</p>
+          <span className="shadow-md flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={kotlin} className=" w-[70px] h-[70px]" alt="" />
+            <p>Kotlin</p>
+          </span>
+
+          <span className="shadow-md flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={django} className=" w-[70px] h-[70px]" alt="" />
+            <p>Djano</p>
+          </span>
+          <span className="shadow-md flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={flask} className=" w-[70px] h-[70px]" alt="" />
+            <p>Flask</p>
+          </span>
+          <span className="shadow-md flex flex-col px-[40px] py-[20px]    rounded-[14px] bg-grey items-center justify-center">
+            <img src={wordpress} className=" w-[70px] h-[70px]" alt="" />
+            <p>Wordpress</p>
           </span>
         </div>
       </section>
       {/* section -6  */}
-      <section className="relative bg-[url('../../public/formimg.avif')] bg-center bg-no-repeat h-screen bg-cover bg-fixed  m-auto py-[120px]">
+      <section className="relative bg-[url('../../public/formimg.avif')] bg-center bg-no-repeat bg-cover bg-fixed  m-auto py-[120px]">
         <div className="absolute inset-0 bg-black/60"></div>
-        <div className=" relative  z-30  gap-[10rem]   flex  justify-center  h-[100%] max-w-[80%]   m-auto items-center">
+        <div className=" relative z-30  gap-[10rem]   flex  justify-center  h-[100%] max-w-[1240px]   m-auto px-[10] items-center">
           {/* 1 */}
           <div className="">
             <h1 className="  text-white text-[50px] uppercase font-bold">
@@ -476,14 +494,24 @@ function Home() {
             </h1>
           </div>
           {/* form */}
-          <div className=" w-[40%]  mt-[10rem]   rounded-[50px] bg-white ">
-            <form action="#" className=" py-14 px-12">
+          <div className=" w-[40%] rounded-[50px] bg-white " id="contact-us">
+            <form
+              className=" py-8 px-8"
+              action="https://formspree.io/f/mpwzarqb"
+              method="POST"
+            >
+              <p className="font-semibold text-heading text-[34px] mb-5 flex items-center gap-3">
+                {" "}
+                <FaTelegramPlane />
+                Get in Touch
+              </p>
               <div>
                 <input
                   type="text"
                   id="name"
                   className=" w-full border-2 p-5 rounded-[14px]"
                   placeholder="Full Name"
+                  required
                 />
               </div>
               <div className=" mt-5">
@@ -492,6 +520,7 @@ function Home() {
                   id="name"
                   className=" w-full border-2  p-5 rounded-[14px]"
                   placeholder="Your Email"
+                  required
                 />
               </div>
               <div className=" mt-5">
@@ -500,6 +529,9 @@ function Home() {
                   id="name"
                   className=" w-full p-5 border-2  rounded-[14px]"
                   placeholder="Phone Number"
+                  maxLength={10}
+                  min={10}
+                  required
                 />
               </div>
               <div className=" mt-5 ">
@@ -508,9 +540,10 @@ function Home() {
                   name="about "
                   id=""
                   placeholder="tell us about your project"
+                  required
                 ></textarea>
               </div>
-              <button className=" mt-5 w-full bg-white text-btnPrimary px-8 py-5 capitalize  text-[17px] font-semibold border-[1px] border-btnPrimary rounded-[100px]">
+              <button className=" mt-5 w-full bg-white text-primary px-8 py-5 capitalize  text-[17px] font-semibold border-[1px] border-primary rounded-[100px] hover:bg-primary hover:text-white transition-all duration-500">
                 Submit
               </button>
 
