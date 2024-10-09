@@ -11,48 +11,49 @@ import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
 
 function Footer() {
   return (
-    <div className=" bg-primary">
-      <div className=" m-auto pt-[80px] pb-10 px-[10] max-w-[1140px] ">
-        <div className="  w-[100%] m-auto flex justify-between items-start">
-          {/* 1 */}
-          <div>
+    <section className="bg-primary">
+      <div className="m-auto pt-[50px] sm:pt-[80px] pb-10 px-5 sm:px-10 max-w-[1140px]">
+        <div className="w-full m-auto flex flex-col sm:flex-row flex-wrap justify-between items-start gap-10">
+          {/* 1st Column */}
+          <div className="w-full sm:w-auto">
             <img src={logo} alt="logo" width={180} className="rounded-[24px]" />
-            <p className=" text-white  text-start mt-5">
+            <p className="text-white text-start mt-5">
               <a href="https://maps.app.goo.gl/1bF7mWEfWJhfVJkG7">
                 Kudasan, Gandhinagar <br />
                 Gujarat 382421
               </a>
             </p>
-            {/* social media*/}
+            {/* Social Media */}
             <div className="flex items-center gap-3 mt-5">
               <a href="#">
-                <FaXTwitter color=" white" fontSize={28} />
+                <FaXTwitter color="white" fontSize={28} />
               </a>
               <a href="#">
-                <FaSquareFacebook color=" white" fontSize={28} />
+                <FaSquareFacebook color="white" fontSize={28} />
               </a>
               <a href="#">
-                <FaLinkedinIn color=" white" fontSize={28} />
+                <FaLinkedinIn color="white" fontSize={28} />
               </a>
               <a href="#">
-                <FaInstagram color=" white" fontSize={28} />
+                <FaInstagram color="white" fontSize={28} />
               </a>
             </div>
           </div>
-          {/* 2 */}
-          <div>
-            <ul className=" flex items-start  justify-start gap-4 flex-col">
-              <span className=" font-bold text-white text-xl">
-                For Work inquiry
+
+          {/* 2nd Column: Work Inquiry */}
+          <div className="w-full sm:w-auto">
+            <ul className="flex flex-col gap-3">
+              <span className="font-bold text-white text-xl">
+                For Work Inquiry
               </span>
               <li className="mt-3">
-                <a href="#" className=" flex  text-white   items-center gap-2">
+                <a href="#" className="flex text-white items-center gap-2">
                   <IoCall color="white" size={24} />
                   +91 9558928879
                 </a>
               </li>
               <li>
-                <a href="#" className=" flex  text-white  items-center gap-2">
+                <a href="#" className="flex text-white items-center gap-2">
                   <FaWhatsapp color="white" size={24} />
                   +91 9558928879
                 </a>
@@ -60,117 +61,103 @@ function Footer() {
               <li>
                 <a
                   href="mailto:hr@rkinnovate.com"
-                  className=" flex   text-white  items-center gap-2"
+                  className="flex text-white items-center gap-2"
                 >
-                  <MdEmail tsapp color="white" size={24} />
+                  <MdEmail color="white" size={24} />
                   hr@rkinnovate.com
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:support@rkinnovate.com"
-                  className=" flex   text-white  items-center gap-2"
+                  className="flex text-white items-center gap-2"
                 >
-                  <MdEmail tsapp color="white" size={24} />
+                  <MdEmail color="white" size={24} />
                   support@rkinnovate.com
                 </a>
               </li>
             </ul>
           </div>
-          {/* 3 */}
-          <div>
-            <ul className=" flex items-start justify-start gap-4 flex-col">
-              <span className=" font-bold text-white text-xl">Company</span>
-              <li className=" mt-3">
-                <a href="#" className=" flex  text-white  items-center gap-2">
-                  About us
+
+          {/* 3rd Column: Company */}
+          <div className="w-full sm:w-auto">
+            <ul className="flex flex-col gap-3">
+              <span className="font-bold text-white text-xl">Company</span>
+              <li className="mt-3">
+                <a href="#" className="flex text-white items-center gap-2">
+                  About Us
                 </a>
               </li>
               <li>
-                <a href="#" className=" flex  text-white  items-center gap-2">
+                <a href="#" className="flex text-white items-center gap-2">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:hr@rkinnovate.com"
-                  className=" flex   text-white  items-center gap-2"
-                >
+                <a href="#" className="flex text-white items-center gap-2">
                   Blog
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:support@rkinnovate.com"
-                  className=" flex   text-white  items-center gap-2"
-                >
+                <a href="#" className="flex text-white items-center gap-2">
                   Contact Us
                 </a>
               </li>
             </ul>
           </div>
-          {/* 4 */}
-          <div>
-            <ul className=" flex items-start justify-start gap-4 flex-col">
-              <span className=" font-bold text-white text-xl">Services</span>
-              <li className=" mt-3">
-                <a href="#" className=" flex  text-white  items-center gap-2">
+
+          {/* 4th Column: Services */}
+          <div className="w-full sm:w-auto">
+            <ul className="flex flex-col gap-3">
+              <span className="font-bold text-white text-xl">Services</span>
+              <li className="mt-3">
+                <a href="#" className="flex text-white items-center gap-2">
                   <MdOutlinePhoneIphone color="white" size={24} />
                   Mobile App Development
                 </a>
               </li>
               <li>
-                <a href="#" className=" flex  text-white  items-center gap-2">
+                <a href="#" className="flex text-white items-center gap-2">
                   <CgWebsite color="white" size={24} />
                   Web App Development
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:support@rkinnovate.com"
-                  className=" flex   text-white  items-center gap-2"
-                >
+                <a href="#" className="flex text-white items-center gap-2">
                   <IoDesktopOutline color="white" size={24} />
                   Desktop App Development
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:hr@rkinnovate.com"
-                  className=" flex   text-white  items-center gap-2"
-                >
-                  <IoHardwareChipSharp tsapp color="white" size={24} />
+                <a href="#" className="flex text-white items-center gap-2">
+                  <IoHardwareChipSharp color="white" size={24} />
                   IoT Product
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:support@rkinnovate.com"
-                  className=" flex   text-white  items-center gap-2"
-                >
-                  <SiCyberdefenders tsapp color="white" size={24} />
+                <a href="#" className="flex text-white items-center gap-2">
+                  <SiCyberdefenders color="white" size={24} />
                   Cyber Security Solutions
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:support@rkinnovate.com"
-                  className=" flex   text-white  items-center gap-2"
-                >
-                  <HiMiniWrenchScrewdriver tsapp color="white" size={24} />
-                  Software Maintainance & Support
+                <a href="#" className="flex text-white items-center gap-2">
+                  <HiMiniWrenchScrewdriver color="white" size={24} />
+                  Software Maintenance & Support
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div className=" border-b-2 border-white pb-2 flex m-auto text-white  justify-center mt-24">
+
+        {/* Footer Bottom */}
+        <div className="border-b-2 border-white pb-2 flex justify-center text-center mt-10 sm:mt-24 text-white">
           <p>
             &copy; {new Date().getFullYear()} Rk Innovate, All rights reserved.
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
